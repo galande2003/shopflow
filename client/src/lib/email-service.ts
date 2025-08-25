@@ -2,7 +2,7 @@
 const SIMULATE_WHATSAPP = false; // Changed to false for real WhatsApp sending
 
 // Your WhatsApp number
-const STORE_WHATSAPP_NUMBER = "+918087949226"; // Your actual WhatsApp number
+const STORE_WHATSAPP_NUMBER = "+919021136367"; // Your actual WhatsApp number
 
 interface OrderEmailData {
   customerName: string;

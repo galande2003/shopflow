@@ -10,11 +10,11 @@ interface ProductCardProps {
 export default function ProductCard({ product }: ProductCardProps) {
   return (
     <Card className="product-card">
-      <div className="aspect-video overflow-hidden">
+      <div className="aspect-square flex items-center justify-center bg-white">
         <img 
           src={product.image} 
           alt={product.name}
-          className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+          className="max-w-full max-h-full object-contain transition-transform duration-300 hover:scale-105 bg-white"
         />
       </div>
       <CardContent className="p-6">
