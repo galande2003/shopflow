@@ -1,0 +1,129 @@
+I want to generate a simple, mobile-friendly e-commerce website using React, CSS, and JavaScript with the following features:
+
+📱 GENERAL REQUIREMENTS:
+Mobile-friendly UI with responsive design.
+
+Use React functional components and React Router DOM for navigation.
+
+Use local state or a simple JSON backend to store product info.
+
+Clean and minimal styling using pure CSS (no frameworks like Tailwind).
+
+🏠 1. HOME PAGE (/)
+Show all products in a grid view.
+
+Each product card includes:
+
+Product image
+
+Product name/title
+
+Price
+
+“View Details” button
+
+📄 2. PRODUCT DETAILS PAGE (/product/:id)
+When a user clicks a product, navigate to this page.
+
+Display:
+
+Product image
+
+Name
+
+Price
+
+Description
+
+“Buy Now” button
+
+🛒 3. CHECKOUT PAGE (/checkout/:id)
+When “Buy Now” is clicked, navigate to checkout page.
+
+Display form with:
+
+Full Name (text input)
+
+Phone Number (text input)
+
+Address (textarea)
+
+“Place Order” button at the bottom
+
+📧 4. EMAIL NOTIFICATION
+On form submission:
+
+Collect all form fields + product name
+
+Send them to my email using EmailJS
+
+Show alert: “Order placed successfully!”
+
+🛠️ 5. ADMIN PANEL (/admin)
+Simple login with hardcoded password admin123
+
+After login:
+
+See list of all products
+
+Buttons to:
+
+Add new product (form with name, image URL, price, description)
+
+Edit or delete existing products
+
+Changes should update in local state or localStorage
+
+🔐 6. OPTIONAL BACKEND
+(Optional: If backend is added, use Express + JSON DB or Firebase to store products and send email.)
+
+🧩 FILE STRUCTURE (Frontend Only)
+markdown
+Copy
+Edit
+/public
+/src
+  /components
+    - ProductList.js
+    - ProductCard.js
+    - ProductDetails.js
+    - CheckoutForm.js
+    - AdminPanel.js
+    - AddProductForm.js
+  /pages
+    - Home.js
+    - ProductPage.js
+    - Checkout.js
+    - Admin.js
+  /data
+    - products.json
+  /utils
+    - emailService.js
+  App.js
+  index.js
+📦 DEPENDENCIES TO INSTALL:
+bash
+Copy
+Edit
+npm install react-router-dom emailjs-com
+📤 DEPLOYMENT INSTRUCTION:
+Deploy frontend on Vercel or Netlify.
+
+Ensure EmailJS service is correctly configured and environment variables are used for safety.
+
+✨ DESIGN STYLE:
+Minimal UI with soft colors
+
+Responsive grid layout for products
+
+Use flexbox for alignment
+
+Button hover effects and transitions
+
+Please generate full React source code with components, routing, and sample CSS. Include:
+
+products.json with 5 sample products (id, title, price, image URL, description)
+
+Working EmailJS integration using placeholder keys
+
+Admin panel with product add/delete/update using local state

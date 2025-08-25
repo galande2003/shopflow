@@ -1,0 +1,26 @@
+===============================================
+     📦 SHOPEASE E-COMMERCE LOCAL PACKAGE
+===============================================
+
+This package contains everything you need to run ShopEase on your local computer.
+
+QUICK SETUP:
+1. Install Node.js 18+ from https://nodejs.org/
+2. Open terminal in this folder
+3. Run: npm install
+4. Run: npm run dev
+5. Open: http://localhost:5000
+
+WHATSAPP NOTIFICATIONS:
+- Configured for WhatsApp number: +918087949226
+- Automatic WhatsApp Web opening on order placement
+- See WHATSAPP_SETUP.md for detailed configuration
+
+For detailed instructions, see:
+- QUICK_START.txt (simple instructions)
+- LOCAL_SETUP_GUIDE.md (comprehensive guide)
+- WHATSAPP_SETUP.md (WhatsApp configuration)
+
+Admin access: /admin (password: admin123)
+
+===============================================

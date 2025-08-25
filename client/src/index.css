@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 98%);
+  --foreground: hsl(240, 10%, 22%);
+  --muted: hsl(240, 4.8%, 95.9%);
+  --muted-foreground: hsl(240, 3.8%, 46.1%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(240, 10%, 22%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(240, 10%, 22%);
+  --border: hsl(240, 5.9%, 90%);
+  --input: hsl(240, 5.9%, 90%);
+  --primary: hsl(246, 83%, 65%);
+  --primary-foreground: hsl(0, 0%, 98%);
+  --secondary: hsl(240, 4.8%, 95.9%);
+  --secondary-foreground: hsl(240, 5.9%, 10%);
+  --accent: hsl(240, 4.8%, 95.9%);
+  --accent-foreground: hsl(240, 5.9%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 10%, 22%);
+  --radius: 0.75rem;
+  --success: hsl(142, 76%, 36%);
+  --success-foreground: hsl(0, 0%, 98%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(246, 83%, 65%);
+  --primary-foreground: hsl(0, 0%, 98%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --success: hsl(142, 76%, 36%);
+  --success-foreground: hsl(0, 0%, 98%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .btn-gradient-primary {
+    background: linear-gradient(135deg, hsl(246, 83%, 65%) 0%, hsl(270, 95%, 75%) 100%);
+    @apply text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5;
+  }
+
+  .btn-gradient-success {
+    background: linear-gradient(135deg, hsl(142, 76%, 36%) 0%, hsl(160, 84%, 32%) 100%);
+    @apply text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5;
+  }
+
+  .header-gradient {
+    background: linear-gradient(135deg, hsl(246, 83%, 65%) 0%, hsl(270, 95%, 75%) 100%);
+  }
+
+  .hero-gradient {
+    background: linear-gradient(135deg, hsla(246, 83%, 65%, 0.1) 0%, hsla(270, 95%, 75%, 0.1) 100%);
+  }
+
+  .product-card {
+    @apply bg-card border border-border rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-2;
+  }
+
+  .page-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .form-input {
+    @apply w-full px-4 py-3 border-2 border-input rounded-lg text-base transition-colors duration-200 focus:outline-none focus:border-primary focus:ring-2 focus:ring-ring;
+  }
+
+  .form-textarea {
+    @apply resize-y min-h-[120px];
+  }
+
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+/* Mobile responsiveness improvements */
+@media (max-width: 768px) {
+  .page-container {
+    @apply px-4;
+  }
+  
+  .product-grid {
+    @apply grid-cols-1 gap-4;
+  }
+  
+  .product-details-grid {
+    @apply grid-cols-1 gap-6;
+  }
+}

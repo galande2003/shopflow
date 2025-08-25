@@ -1,0 +1,54 @@
+===============================================
+     🛍️ SHOPEASE E-COMMERCE - QUICK START
+===============================================
+
+STEP 1: INSTALL NODE.JS
+- Go to: https://nodejs.org/
+- Download and install Node.js version 18 or higher
+- Restart your computer after installation
+
+STEP 2: DOWNLOAD PROJECT
+- Download all project files to a folder on your computer
+- Make sure you have these folders: client/, server/, shared/
+- And these files: package.json, vite.config.ts, etc.
+
+STEP 3: OPEN TERMINAL
+Windows: Press Win+R, type "cmd", press Enter
+Mac: Press Cmd+Space, type "Terminal", press Enter
+Linux: Press Ctrl+Alt+T
+
+STEP 4: GO TO PROJECT FOLDER
+Type: cd path/to/your/project/folder
+Example: cd C:\Users\YourName\Desktop\shopease
+
+STEP 5: INSTALL DEPENDENCIES
+Type: npm install
+Wait 2-5 minutes for it to complete
+
+STEP 6: START THE SERVER
+Type: npm run dev
+Wait for message: "[express] serving on port 5000"
+
+STEP 7: OPEN IN BROWSER
+Go to: http://localhost:5000
+
+===============================================
+
+ADMIN ACCESS:
+URL: http://localhost:5000/admin
+Password: admin123
+
+FEATURES:
+- Product browsing and details
+- Shopping cart and checkout
+- Order history (/orders)
+- Order cancellation
+- Admin product management
+- Mobile-responsive design
+
+TROUBLESHOOTING:
+- Port busy? Try: npx kill-port 5000
+- Dependencies error? Try: npm cache clean --force
+- Node not found? Restart terminal after installing Node.js
+
+===============================================
